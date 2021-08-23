@@ -1,9 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import panelReducer from '../features/panel/panelSlice';
-
+import polygonReducer from '../features/polygon/polygonSlice';
 export const store = configureStore({
   reducer: {
     panel: panelReducer,
+    polygon: polygonReducer
   },
 });
 

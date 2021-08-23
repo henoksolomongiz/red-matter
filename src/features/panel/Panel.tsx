@@ -13,7 +13,8 @@ export function Panel() {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="App">
+    <>
+          <Canvas />
       <button
         className={styles.button}
         aria-label="Add Rectangle"
@@ -25,8 +26,8 @@ export function Panel() {
           y: Math.floor(Math.random() * 400),
         }))}
       >Add Rectangle</button>
-      <Canvas />
-    </div>
+
+    </>
   );
 }
 
